@@ -1,5 +1,6 @@
 export class MyDate {
 
+
   year: number;
   month: number;
   day: number;
@@ -28,12 +29,7 @@ export class MyDate {
 
 }
 
-
-
-
 const myDate = new MyDate(2023, 7, 14);
-console.log(myDate.printFormat());
-myDate.add(1, 'days');
-console.log(myDate.printFormat());
-myDate.add(1, 'months');
-console.log(myDate.printFormat());
+console.log(myDate.day);
+myDate.day = 12;
+console.log(myDate.day);
